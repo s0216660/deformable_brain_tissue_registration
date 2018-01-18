@@ -1,7 +1,7 @@
 '''
 Created on Jan 18, 2018
 
-@author: alberts
+@author: Esther Alberts
 '''
 
 import os
