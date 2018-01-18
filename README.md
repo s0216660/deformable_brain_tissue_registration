@@ -6,7 +6,7 @@ This python package allows to create brain tissue probability maps for grey matt
 
 In case T1 isn't available, another modality image can be supplied. T1 should be preferred, because:
 
-1. A T1 atlas image depicting normal adult brain anatomy [sri24] is used as a registration floating image,
+1. A T1 atlas image depicting normal adult brain anatomy (extracted from [sri24]) is used as a registration floating image,
 2. pathologies such as brain tumors and lesions are less pronounced in T1, which is beneficial when performing registration with an atlas image depicting normal adult brain anatomy.
 
 ## Methods
