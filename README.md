@@ -33,7 +33,7 @@ An overview of the methodology can be described as follows:
 4. The resulting *control point grid image* is applied to the affinely registered WM, GM and CSF atlas tissue probability maps which were acquired in step 2. This leaves us with the deformably registered atlas tissue probability maps in patient space.
 
 ![alt text][An illustrative overview is given below]
-[logo]: https://bitbucket.org/s0216660/deformable-tissue-registrations/src/827f13ba2d78/overview_picture.pdf "Overview"
+[logo]: https://bitbucket.org/s0216660/deformable-tissue-registrations/src/a836d4231ff5b8088b982a8cb7577f3cb7f2c3a0/atlas_registration.pdf?at=master&fileviewer=file-view-default "Overview"
 
 ## Installation
 
