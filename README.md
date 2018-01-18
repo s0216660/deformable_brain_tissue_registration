@@ -21,7 +21,7 @@ An illustrative overview is given below:
 
 The methodology can be described as follows:
 
-1. Top row (left): An **affine registration** is calculated from atlas T1 to patient T1, resulting in 
+1. Top row (left): An **affine registration** is calculated from atlas T1 to patient T1, resulting in:
 
     * an affine transformation matrix T_aff (encoding the affine transformation) and,
   
@@ -29,7 +29,7 @@ The methodology can be described as follows:
  
 2. Middle row: The resulting **affine transformation matrix T_aff** is applied to the WM, GM and CSF atlas tissue probability maps.
 
-3. Middle row (left): A **non-rigid (fast free-form deformable) registration** is calculated from the affinely registered T1 atlas to patient T1, resulting in 
+3. Middle row (left): A **non-rigid (fast free-form deformable) registration** is calculated from the affinely registered T1 atlas to patient T1, resulting in: 
 
     * a control point grid image T_def (encoding the non-rigid transformation) and,
  
