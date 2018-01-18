@@ -16,13 +16,20 @@ The brain tissue probability maps are created via affine and non-rigid registrat
 Registrations are calculated between a T1 image and the supplied patient T1 image, and the resulting transformations are then applied in parallel to the WM, GM and CSF atlas tissue probability maps:
 
 An overview of the methodology can be described as follows:
+
 1. An affine registration is calculated from atlas T1 to patient T1, resulting in 
+
  - an affine transformation matrix $T_{aff}$ (encoding the affine transformation) and,
  - a T1 atlas affinely registered to patient space, T1_aff_patient_space.
+ 
 2. The resulting affine transformation matrix is applied to the WM, GM and CSF atlas tissue probability maps.
+
 3. A non-rigid (fast free-form deformable) registration is calculated from the affinely registered T1 atlas to patient T1, resulting in 
+
  - a control point grid image (encoding the non-rigid transformation) and,
+ 
  - a T1 atlas deformably registered to patient space, T1_def_patient_space.
+ 
 4. The resulting control point grid image is applied to the affinely registered WM, GM and CSF atlas tissue probability maps which were acquired in step 2. This leaves us with the deformably registered atlas tissue probability maps in patient space.
 
 ![alt text][An illustrative overview is given below]
@@ -36,14 +43,19 @@ This package makes use of NiftiReg, a library designed specifically for rigid, a
 - [installation guidelines](https://cmiclab.cs.ucl.ac.uk/mmodat/niftyreg/wikis/install).
 
 [1]: https://www.nitrc.org/projects/sri24/
+
 [2]: T. Rohlfing, N. M. Zahr, E. V. Sullivan, and A. Pfefferbaum, “The SRI24 multichannel atlas of normal adult human brain structure,” Human Brain Mapping, vol. 31, no. 5, pp. 798-819, 2010. DOI: 10.1002/hbm.20906
+
 [3]: http://cmictig.cs.ucl.ac.uk/wiki/index.php/NiftyReg
+
 [4]: Modat, et al. (2014). Global image registration using a symmetric block-
 matching approach. Journal of Medical Imaging, 1(2), 024003–024003.
 doi:10.1117/1.JMI.1.2.024003
+
 [5]: Rueckert, et al.. (1999). Nonrigid registration using free-form
 deformations: Application to breast MR images. IEEE Transactions on Medical
 Imaging, 18(8), 712–721. doi:10.1109/42.796284
+
 [6]: Modat, et al. (2010). Fast free-form deformation using graphics processing
 units. Computer Methods And Programs In Biomedicine,98(3), 278–284.
 doi:10.1016/j.cmpb.2009.09.002
