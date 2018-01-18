@@ -34,7 +34,7 @@ An overview of the methodology can be described as follows:
 
 An illustrative overview is given below:
 
-![alt text](https://bitbucket.org/s0216660/deformable-tissue-registrations/raw/466bd793faeae49419487c10d4b7c8f3d8a3c184/atlas_registration.pdf)
+![alt text](https://bytebucket.org/s0216660/deformable-tissue-registrations/raw/210a739b50c4c30aaa9dc57cdceb77a28ad8b19b/atlas_registration.png?token=cfe6fe1423c6880bd7a7e7f0bae25ac77915a4a4)
 
 ## Installation
 
